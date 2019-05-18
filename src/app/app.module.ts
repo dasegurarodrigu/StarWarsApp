@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PeliculasComponent } from './Vistas/peliculas/peliculas.component';
+import { InfoComponent } from './Vistas/info/info.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PeliculasComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
